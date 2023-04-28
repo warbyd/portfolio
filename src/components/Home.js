@@ -24,7 +24,8 @@ const Home = () => {
         </div>
         <div className="projects-container">
           <h2 className="projects-header">Recent projects</h2>
-          <h3 className="project-name">Python Event Planner</h3>
+          <h3 className="project-name">PlanPerfect</h3>
+          <p  className="project-description">A python based Event and Task Management app</p>
           <Link to="/projects/python-event-planner" className= 'project-link'>
             <ProjectBox className="project-box" />
           </Link>

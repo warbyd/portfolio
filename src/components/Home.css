@@ -8,32 +8,8 @@
     box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 70px;
-}
 
-nav li {
-    margin-left: 1rem;
-}
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-}
-
-nav a:hover {
-    color: #fff;
-    background-color: #333;
-}
 
 .main-container {
     padding: 6rem 2rem 2rem;
@@ -76,6 +52,10 @@ nav a:hover {
 }
 
 .projects-container .project-link {
+    margin-left: 50px
+}
+
+.projects-container .project-description {
     margin-left: 50px
 }
 

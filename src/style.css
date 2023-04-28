@@ -1,20 +1,36 @@
 .project-box {
-    display: inline-block;
-    padding: 60px;
-    border: 2px solid black;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 1.2rem;
-    background-image: url('../public/images/pexels-burst-374631.jpg');
-    background-size: cover;
-    background-position: center;
+  display: inline-block;
+  padding: 200px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-image: url('../public/images/istockphoto-1390099223-612x612.jpg');
+  background-size: contain; /* Changed from 'cover' to 'contain' */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project-box:hover {
+  /* border: 8px solid black; */
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
-  
-  .project-box:hover {
-    background-color: black;
-    color: white;
+  25% {
+    transform: translateY(-10px);
   }
-  
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

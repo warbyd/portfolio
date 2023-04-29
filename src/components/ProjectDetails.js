@@ -1,17 +1,31 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
+const projects = [
+  {
+    id: 'python-event-planner',
+    title: 'Python Event Planner',
+    description: 'A python based Event and Task Management app',
+    githubLink: 'https://github.com/warbyd/Python-Project-Events-Planner'
+  },
+  {
+    id: 'lilypad',
+    title: 'LilyPad',
+    description: 'A JavaScript based social media app created for Frogs!',
+    githubLink: 'https://github.com/efgeri/LilyPad'
+  }
+];
+
 const ProjectDetail = () => {
   const { id } = useParams();
 
-  // fetch project details from API or database using the id parameter
+  // find the project with the matching id
+  const project = projects.find(p => p.id === id);
 
-  const project = {
-    id: 1,
-    title: 'Python Event Planner',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut lorem sed erat imperdiet mattis eu id ipsum. Nulla facilisi.',
-    githubLink: 'https://github.com/warbyd/Python-Project-Events-Planner'
-  };
+  // if project is not found, display an error message
+  if (!project) {
+    return <div>Project not found</div>;
+  }
 
   return (
     <div>

@@ -3,6 +3,23 @@ import { Link } from 'react-router-dom';
 import ProjectBox from './ProjectBox';
 import './Home.css';
 
+const projects = [
+  {
+    id: 1,
+    name: 'PlanPerfect',
+    description: 'A python based Event and Task Management app',
+    link: '/projects/python-event-planner',
+    githubLink: 'https://github.com/warbyd/Python-Project-Events-Planner'
+  },
+  {
+    id: 2,
+    name: 'LilyPad',
+    description: 'A JavaScript based social media app created for Frogs!',
+    link: '/projects/lilypad',
+    githubLink: 'https://github.com/efgeri/LilyPad'
+  }
+];
+
 const Home = () => {
   return (
     <div>
@@ -20,15 +37,20 @@ const Home = () => {
         <div className="hero-text">
           <h1 className="name">Dale Warburton</h1>
           <p className="welcome">I am a junior full stack developer,<br/>welcome to my portfolio site</p>
-          <h3 className="recent-projects"></h3>
+          <h3 className="recent-projects">Recent projects</h3>
         </div>
         <div className="projects-container">
-          <h2 className="projects-header">Recent projects</h2>
-          <h3 className="project-name">PlanPerfect</h3>
-          <p  className="project-description">A python based Event and Task Management app</p>
-          <Link to="/projects/python-event-planner" className= 'project-link'>
-            <ProjectBox className="project-box" />
-          </Link>
+          <div className="projects-wrapper">
+            {projects.map(project => (
+              <div className="project-item" key={project.id}>
+                <h3 className="project-name">{project.name}</h3>
+                <p className="project-description">{project.description}</p>
+                <Link to={project.link} className='project-link'>
+                  <ProjectBox className="project-box" githubLink={project.githubLink} />
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

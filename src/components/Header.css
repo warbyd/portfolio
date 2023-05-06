@@ -69,6 +69,19 @@ nav a:hover {
   }
 
   li {
-    margin: 10px 0;
+    margin: 20px 0;
   }
+
+  nav a:hover {
+    padding: 3px 8px;
+  
 }
+
+}
+  
+    nav a:hover {
+      padding: 3px 8px;
+    
+  }
+  
+

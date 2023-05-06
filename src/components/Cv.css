@@ -1,0 +1,53 @@
+
+  
+.cv-container {
+    min-height: calc(100vh - (50px + 2rem)); /* 50px for footer height, 2rem for any additional padding/margin */
+    margin-left:50px;
+  }
+  
+  
+  .cv-title {
+    font-family: 'Raleway';
+    font-size: 5rem;
+    margin-top: 300px;
+    margin-left: 70px;
+  }
+  
+  .cv-paragraph {
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Raleway';
+    margin-left: 80px;
+  }
+  
+  .cv-options {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    margin-left: 80px;
+  }
+  
+  .cv-options a {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .cv-options a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .cv-text {
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Raleway';
+  }
+  

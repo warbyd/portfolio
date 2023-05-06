@@ -1,79 +1,87 @@
 .footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
     background-color: #212121;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     padding: 50px 0;
-    display: flex
-   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 100px
     
-   
- 
-}
-      
-.footer-container {
+  }
+  
+  .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1000px;
+    flex-wrap: wrap;
     margin: 0 auto;
-}
+    width: 100%;
+    margin: 0;
+    padding: 0
+  }
   
-.left-col {
+  .left-col {
     width: 40%;
-}
-
-.left-col img {
+  }
+  
+  .left-col img {
     max-width: 200px;
     margin-bottom: 20px;
-}
+  }
   
-.social-media a {
+  .social-media a {
     font-size: 24px;
     color: #fff;
     margin-right: 10px;
     transition: transform 0.3s ease;
-}
+  }
   
-.social-media a:hover {
+  .social-media a:hover {
     transform: translateY(-5px);
-}
+  }
   
-.rights-text {
+  .rights-text {
     margin-top: 20px;
-}
+  }
   
-.right-col {
+  .right-col {
     width: 60%;
-}
+  }
   
-.right-col h1 {
+  .right-col h1 {
     font-size: 28px;
     margin-bottom: 20px;
-}
+  }
   
-.border {
+  .border {
     width: 80px;
     height: 3px;
     background-color: #fff;
     margin-bottom: 20px;
-}
+  }
   
-.newsletter-form {
+  .newsletter-form {
     display: flex;
     align-items: center;
-}
+  }
   
-.txtb {
+  .txtb {
     padding: 10px;
     border: none;
     outline: none;
     width: 60%;
     margin-right: 10px;
     font-size: 16px;
-}
+  }
   
-.btn {
+  .btn {
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -82,42 +90,140 @@
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-}
+  }
   
-.btn:hover {
+  .btn:hover {
     background-color: #333;
     color: #fff;
-}
+  }
   
-.nav-links1 {
-    width: 40%;
-    align-self: flex-end;
-}
-  
-
-  
-.hire {
-    
+  .hire {
     margin-left: 150px;
-    font-size: 13px
-}
+    font-size: 13px;
+  }
   
-.rights-text {
+  .rights-text {
     margin-top: auto;
-}
-
-.built-by {
+  }
+  
+  .built-by {
     font-size: 10px;
     margin-top: 200px;
+    margin-right: 200px;
+  }
+  
+  .nav-links li {
+    text-decoration: none !important;
+    list-style: none;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: left;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+  
+  .hire-buttons {
+    display: flex;
+  }
+  
+  .hire-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .hire-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .fab {
+    margin-right: 5px;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 767px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
     
-    margin-left: 50px
-}
-
-.navigation {
-    margin-left: 600px;
-    font-size: 13px
-}
-
-.nav-links {
-    font-size: 12px
-}
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .left-col, .right-col {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .left-col img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    
+    .social-media {
+      margin-bottom: 20px;
+    }
+    
+    .rights-text {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    
+    .newsletter-form {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .txtb {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    .hire {
+      margin-left: 0;
+      text-align: center;
+    }
+    
+    .built-by {
+      margin-top: 0;
+      margin-right: 0;
+      text-align: center;
+    }
+    
+    .nav-links li {
+      margin-bottom: 10px;
+    }
+    
+    .hire-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .hire-button {
+      margin-bottom: 10px;
+    }
+  }
+  

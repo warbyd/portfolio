@@ -4,23 +4,22 @@ import Home from './components/Home';
 import About from './components/About';
 import Cv from './components/Cv';
 import Contact from './components/Contact';
-import ProjectDetail from './components/ProjectDetails';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import './style.css'
+import LilyPad from './components/LilyPad'; // Import the LilyPad component
+import EventsPlanner from './components/EventsPlanner';
+
+
 
 function App() {
   return (
     <BrowserRouter>
-    <Header />
       <Routes>
         <Route path="/portfolio" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<Cv />} />
-        <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="/lilypad" element={<LilyPad />} /> {/* Add the route for the LilyPad component */}
+        <Route path="/eventsplanner" element={<EventsPlanner />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

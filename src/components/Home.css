@@ -14,7 +14,8 @@
 
 .main-container {
     padding: 6rem 2rem 2rem;
-    margin-left: 50px
+    margin-left: 200px;
+
 }
 
 .hero-text {
@@ -22,103 +23,86 @@
 }
 
 .hero-text .name {
-    font-family: 'Raleway';
-    font-size: 5rem;
-    margin-bottom: 1rem;
-    margin-left: 70px;
+  font-family: 'Raleway';
+  font-size: 5rem;
+  margin-top: 250px;
+align-items: left;
 }
 
 .hero-text .welcome {
     font-family: 'Open Sans';
     font-size: 25px;
     margin-bottom: 250px;
-    margin-left: 80px
+    align-items: left;
+
 }
 
 .hero-text .recent-projects {
     font-family: 'Raleway';
     font-size: 40px;
     margin-bottom: 100px;
-    margin-left: 80px
+
 }
 
 
-.projects-container .projects-header {
-    font-size: 50px;
-    margin-bottom: 70px;
-    margin-left: 50px;
-    font-family: 'Raleway';
+
+.project-image:hover {
+  animation: bounce 0.6s ease-in-out;
 }
 
-.projects-container .project-name {
-    font-family: 'Raleway';
-    font-size: 30px;
-    margin-left: 120px
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
 }
 
-.projects-container .project-link {
-    margin-left: 50px;
-    margin-bottom: 100px;
-}
+
+
+
+
+
 
 .projects-container .project-description {
     
-    margin-left: 120px;
+
     font-size: 20px;
-    font-family: 'Raleway'
-    
-}
-
-.projects-container .project-tech {
-
-    margin-bottom: 100px;
-    margin-left: 150px;
     font-family: 'Raleway';
-    font-size: 20px
-}
-
-
-  
-  .projects-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 -15px; /* negative margin to compensate for project-item padding */
-  }
-  
-  .project-item {
-    width: calc(50% - 30px); /* 50% width minus margin on both sides */
-    padding: 0 15px;
-  }
-
-  .project-link {
-    position: relative;
-    display: inline-block;
     
-  }
+    
+    
   
-
-  
-  
-
-
-
-@media only screen and (max-width: 768px) {
-    .main-container {
-      padding: 6rem 1rem 2rem;
-      margin-left: 50px
-    }
-  
-    .hero-text .name {
-      font-size: 3rem;
-    }
-  
-    .hero-text .welcome {
-      font-size: 1.5rem;
-    }
-  
-    .hero-text .recent-projects {
-      font-size: 1.2rem;
-      
-    }
+    
 }
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+  
+
+
+
+  

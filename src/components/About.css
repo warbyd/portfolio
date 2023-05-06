@@ -1,0 +1,31 @@
+.about-container {
+    min-height: calc(100vh - (50px + 2rem)); /* 50px for footer height, 2rem for any additional padding/margin */
+    margin-left:50px;
+
+    
+
+  }
+  
+  .about-title {
+    font-family: 'Raleway';
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    margin-left: 70px;
+    margin-top: 300px;
+    margin-right: 100px;
+  }
+  
+
+  
+  .about-text, .about-text2 {
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Raleway';
+    margin-left: 80px;
+    margin-bottom: 300px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+
+  }
+

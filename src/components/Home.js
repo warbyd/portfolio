@@ -1,58 +1,44 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProjectBox from './ProjectBox';
+import Footer from './Footer';
+import CallToAction from './Hire';
+import Header from './Header';
 import './Home.css';
-
-const projects = [
-  {
-    id: 1,
-    name: 'PlanPerfect',
-    description: 'A python based Event and Task Management app',
-    link: '/projects/python-event-planner',
-    githubLink: 'https://github.com/warbyd/Python-Project-Events-Planner'
-  },
-  {
-    id: 2,
-    name: 'LilyPad',
-    description: 'A JavaScript based social media app created for Frogs!',
-    link: '/projects/lilypad',
-    githubLink: 'https://github.com/efgeri/LilyPad'
-  }
-];
+import lilypad from './lilypad.png';
+import eventsplanner from './eventsplanner.png';
+import './Projects.css';
 
 const Home = () => {
   return (
     <div>
-      <header className="header">
-        <nav>
-          <ul>
-            <li><Link to="/portfolio">Home</Link></li>
-            <li><Link to="/cv">CV</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <div className="main-container">
         <div className="hero-text">
           <h1 className="name">Dale Warburton</h1>
-          <p className="welcome">I am a junior full stack developer,<br/>welcome to my portfolio site</p>
+          <p className="welcome">I am a junior full stack developer,<br/>welcome to my portfolio site.</p>
           <h3 className="recent-projects">Recent projects</h3>
         </div>
         <div className="projects-container">
-          <div className="projects-wrapper">
-            {projects.map(project => (
-              <div className="project-item" key={project.id}>
-                <h3 className="project-name">{project.name}</h3>
-                <p className="project-description">{project.description}</p>
-                <Link to={project.link} className='project-link'>
-                  <ProjectBox className="project-box" githubLink={project.githubLink} />
-                </Link>
-              </div>
-            ))}
+          <div className="project-box">
+            <h4 className="project-title">PlanPerfect</h4>
+            <p className="project-description">An Event and Task Management app.</p>
+            <h4 className="project-tools">Python, Flask, SQL</h4>
+            <Link to="/eventsplanner">
+              <img src={eventsplanner} alt="Events Planner" className="project-image" />
+            </Link>
+          </div>
+          <div className="project-box">
+            <h4 className="project-title">LilyPad</h4>
+            <p className="project-description">A social media app for Frogs!</p>
+            <h4 className="project-tools">JavaScript, React, MongoDB</h4>
+            <Link to="/lilypad">
+              <img src={lilypad} alt="LilyPad Project" className="project-image" />
+            </Link>
           </div>
         </div>
       </div>
+      <CallToAction />
+      <Footer />
     </div>
   );
 };

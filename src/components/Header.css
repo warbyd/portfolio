@@ -8,7 +8,6 @@ nav {
   z-index: 9999;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
   padding: 40px;
 }
@@ -40,15 +39,16 @@ nav a:hover {
 }
 
 .logo-container {
-  margin-right: 1rem; /* Add a right margin for some space between the logo and the navigation links */
-  order: -1; /* Add this line to move the logo container to the far left */
-  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: auto; /* this pushes the logo to the left side */
 }
 
 .logo {
   height: 80px;
   width: auto;
-  margin-right: 1100px
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 767px) {
